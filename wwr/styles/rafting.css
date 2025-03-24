@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #010513;
+    --secondary-color: #225AC1;
+    --accent1: #A31212;
+    --accent2: #FFFFFF;
+
+}
+
+body {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--accent2);
+    padding: 30px;
+    text-shadow: var(--accent1) 3px 3px;
+}
+
+h1 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--accent2);
+    text-align: center;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    color: var(--accent2);
+    font-size: 1.2em;
+}
+
+.herodiv {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.herodiv img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.herodiv h1 {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    color: var(--accent2);
+    font-size: 3em;
+    text-shadow: 3px 3px 5px var(--accent1);
+}
+
+.about {
+    color: var(--accent2);
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    background: radial-gradient(var(--primary-color), var(--accent1));
+    border: 4px dashed var(--primary-color);
+    border-radius: 15px;
+    padding: 0.65rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.9;
+}
+
+.about img {
+    width: 300px;
+    height: auto;
+}
+
+section {
+    background-color: var(--secondary-color);
+    color: var(--accent2);
+    padding: 20px;
+    margin: 20px;
+}
+
+section img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--accent1);
+    color: var(--accent2);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+footer a {
+    color: var(--accent2);
+    text-decoration: none;
+}
