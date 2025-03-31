@@ -1,6 +1,7 @@
 :root {
     --border: 1px solid rgb(151 68 68 / 0.1);
 }
+
 nav {
     background-color: #3d98a4;
     padding: 1rem;
@@ -24,7 +25,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     border: var(--border);
     padding: 2px;
@@ -56,24 +57,31 @@ footer {
     border-top: var(--border);
     text-align: center;
 }
-header, footer {
+
+header,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-.grid, header, footer {
+.grid,
+header,
+footer {
     max-width: 1200px;
     margin: auto;
 }
+
 .grid {
     display: grid;
     align-items: center;
 }
+
 main {
     grid-column: 2;
     margin: 1rem;
-    display:block;
+    display: block;
 }
+
 aside {
     width: 20rem;
     position: relative;
