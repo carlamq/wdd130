@@ -225,9 +225,9 @@ footer a {
 }
 
 .gmap {
-    max-width: 600px;
-    height: auto;
     margin: 0;
+    width: 100%;
+    border: 0;
 }
 
 .employees {
