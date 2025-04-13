@@ -134,7 +134,9 @@ article img {
 .address h2,
 .contactform h2,
 .contactus p,
-.services h2 {
+.services h2,
+.trips h2,
+.trip-table h2 {
     color: var(--accent2);
     grid-column: 1/-1;
     justify-self: center;
@@ -347,4 +349,63 @@ button:hover {
     justify-self: center;
     grid-row: 1;
     font-family: "Boldonse", system-ui;
+}
+
+.trips {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    color: var(--accent2);
+    gap: 1rem;
+    margin: 20px;
+}
+
+.trips img {
+    width: 300px;
+    align-items: center;
+}
+
+.trip-table {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent2);
+    color: var(--accent2);
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #292942;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    text-align: center;
+    border: 1px solid var(--accent2);
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: #3b4065;
+}
+
+table {
+    width: 97%;
+    border-collapse: collapse;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent2);
+    color: var(--accent2);
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
 }
