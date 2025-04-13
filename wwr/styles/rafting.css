@@ -234,6 +234,7 @@ footer a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    color: var(--accent2);
     gap: 1rem;
     margin: 20px;
 }
