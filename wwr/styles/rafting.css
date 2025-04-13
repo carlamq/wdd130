@@ -113,7 +113,11 @@ article img {
 }
 
 .history h2,
-.adventure h2 {
+.adventure h2,
+.employees h2,
+.address h2,
+.contactform h2,
+.contactus p {
     color: var(--accent2);
     grid-column: 1/-1;
     justify-self: center;
@@ -140,7 +144,6 @@ figure {
     flex-flow: column;
     padding: 5px;
     margin: auto;
-    ;
 }
 
 figcaption {
@@ -160,6 +163,10 @@ footer {
     justify-content: space-between;
 }
 
+footer a {
+    color: var(--accent2);
+}
+
 .slinks {
     color: var(--accent2);
     text-decoration: none;
@@ -167,4 +174,96 @@ footer {
 
 .slinks a:hover {
     background-color: unset;
+}
+
+.contactus-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.contactus h1 {
+    color: var(--accent2);
+    grid-column: 1/-1;
+    justify-self: center;
+    grid-row: 1;
+}
+
+.contactform {
+    background-color: var(--accent1);
+    color: var(--accent2);
+    padding: 20px;
+    margin: 20px;
+    grid-column: 1/4;
+    grid-row: 2;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.2em;
+}
+
+.address {
+    background-color: var(--secondary-color);
+    color: var(--accent2);
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 1em;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.2em;
+    gap: 20px;
+    grid-column: 4/7;
+    grid-row: 2;
+}
+
+.hrule {
+    border: 1px solid var(--accent2);
+    grid-column: 1/-1;
+}
+
+.address a {
+    color: #FFFFFF;
+}
+
+.gmap {
+    max-width: 600px;
+    height: auto;
+    margin: 0;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    margin: 20px;
+}
+
+.message,
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.radio-inputs {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 0.5rem;
+}
+
+button {
+    background-color: var(--accent2);
+    color: var(--primary-color);
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1.2em;
+    margin: 1rem;
+    width: 100%;
+    display: block;
+    margin: 1rem auto;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent2);
 }
